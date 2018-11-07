@@ -4,7 +4,7 @@ set -e
 CRON=${CRON:-'*/15 * * * *'}
 
 if [ -n "${CRON}" ]; then
-    echo '${CRON}    /usr/local/bin/docker-runner-clean' > /etc/crontabs/root
+    echo "${CRON}    /usr/local/bin/docker-runner-clean" > /etc/crontabs/root
 fi
 
 # EOF
