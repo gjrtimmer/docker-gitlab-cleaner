@@ -38,7 +38,7 @@ docker pull datacore/redis:latest
 Build:
 
 ```bash
-docker build -t datacore/gitlab-cleaner https://github.com/GJRTimmer/docker-gitlab-cleaner
+docker build -t datacore/gitlab-cleaner https://github.com/GJRTimmer/docker-gitlab-cleaner.git
 ```
 
 </p>
@@ -59,7 +59,7 @@ docker pull registry.timmertech.nl/docker/gitlab-cleaner:latest
 Build:
 
 ```bash
-docker build -t datacore/gitlab-cleaner https://gitlab.timmertech.nl/docker/gitlab-cleaner
+docker build -t datacore/gitlab-cleaner https://gitlab.timmertech.nl/docker/gitlab-cleaner.git
 ```
 
 </p>
