@@ -1,3 +1,7 @@
+[![build status](https://gitlab.timmertech.nl/docker/gitlab-cleaner/badges/master/build.svg)](https://gitlab.timmertech.nl/docker/gitlab-cleaner/commits/master)
+[![](https://images.microbadger.com/badges/image/datacore/gitlab-cleaner.svg)](https://microbadger.com/images/datacore/gitlab-cleaner)
+[![](https://images.microbadger.com/badges/license/datacore/gitlab-cleaner.svg)](https://microbadger.com/images/datacore/gitlab-cleaner)
+
 # gitlab-cleaner
 
 Dockerized Gitlab Cleaner
