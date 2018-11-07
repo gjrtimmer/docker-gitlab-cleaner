@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
-CONTAINERS=$(docker ps -q --filter status=exited;name=runner- 2>/dev/null)
-if [ ! -z ${CONTAINERS} ]; then
-	docker rm -v ${CONTAINERS} 2>/dev/null
+CLIST=$(docker ps -q --filter status=exited;name=runner 2>/dev/null)
+if [ -n "$CLIST" ]; then                                            
+	CLEN=$(echo "$CLIST" | wc -l)                               
+	echo "Removing "$CLEN" Containers"                          
+	
+	echo ${CLIST} | while read CONTAINER
+	do                    
+		docker rm -v ${CONTAINER} 2>/dev/null               
+	done                                         
 fi
 
 # EOF
